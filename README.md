@@ -7,3 +7,5 @@ Este repositório contém meus projetos de SQL, com foco em análise de dados e 
 ## Estrutura
 - `Portifólio.sql/`: Contém o projeto por completo.
 - `exemplos/`: Exemplos de consultas e resultados de análises.
+
+```portfolio-de-dados/ │ ├── portfolio_1/ │ ├── README.md │ ├── exemplos/ │ │```
