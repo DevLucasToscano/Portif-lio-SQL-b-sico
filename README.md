@@ -5,7 +5,5 @@ Este repositório contém meus projetos de SQL, com foco em análise de dados e 
 1. **Análise de Funcionários**: Projeto de análise de funcionários com consultas SQL para identificar, filtrar e atualizar dados pedidos pelo cliente
 
 ## Estrutura
-- `Portifólio.sql/`: Contém o projeto por completo.
-- `exemplos/`: Exemplos de consultas e resultados de análises.
-
-```portfolio-de-dados/ │ ├── portfolio_1/ │ ├── README.md │ ├── exemplos/ │ │```
+- `ProjetoDB.sql/`: Contém o projeto por completo.
+- `Querys/`: Exemplos de consultas e resultados de análises.
