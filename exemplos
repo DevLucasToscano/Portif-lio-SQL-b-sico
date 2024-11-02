@@ -1,0 +1,84 @@
+/* Filtrando e atualizando os valores Nulos */
+
+select nome, sexo, email
+from funcionarios
+where email is NULL;
+
+update funcionarios
+set email = 'watson@gmail.com'
+where nome = 'Watson';
+
+update funcionarios
+set email = 'adams@gmail.com'
+where nome = 'Adams';
+
+update funcionarios
+set email = 'gardner@gmail.com'
+where nome = 'Gardner';
+
+update funcionarios
+set email = 'castillo@gmail.com'
+where nome = 'Castillo';
+
+update funcionarios
+set email = 'richardson@gmail.com'
+where nome = 'Richardson';
+
+update funcionarios
+set email = 'adams@gmail.com'
+where nome = 'Adams';
+
+update funcionarios
+set email = 'graham@gmail.com'
+where nome = 'Graham';
+
+update funcionarios
+set email = 'owens@gmail.com'
+where nome = 'Owens';
+
+update funcionarios
+set email = 'myers@gmail.com'
+where nome = 'Myers';
+
+update funcionarios
+set email = 'price@gmail.com'
+where nome = 'Price';
+
+update funcionarios
+set email = 'hunt@gmail.com'
+where nome = 'Hunt';
+
+update funcionarios
+set email = 'turner@gmail.com'
+where nome = 'Turner';
+
+update funcionarios
+set email = 'howard@gmail.com'
+where nome = 'Howard';
+
+select nome, sexo, email
+from funcionarios
+where email is NULL;
+
+/*O gestor do departamento de computadores deseja encaminhar um email para todos
+--os funcionarios de seu setor para marcar uma reunião, quer somente o nome e email*/
+
+select nome, email
+from funcionarios
+where departamento = 'computadores'
+
+/*Por motivo do Outubro rosa a gestora de recursos humanos deseja encaminhar
+--um email para as funcionarias dos departamentos de lar, criancas e beleza*/
+
+select count(*), departamento
+from funcionarios
+where sexo = 'feminino'
+group by departamento
+order by 1;
+
+/*lar 32, criancas 21 e beleza 28 */
+
+select * 
+from funcionarios
+where departamento in ('beleza','lar','criancas')
+	and sexo = 'feminino';
